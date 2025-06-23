@@ -47,3 +47,27 @@
 
   border: 2px solid var(--color-red);
 }
+
+.stacks--container {
+  display: flex;
+  gap: 16px;
+  margin-top: 80px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 8px 16px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+}
+
+.tag img {
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 140%;
+  width: 24px;
+  height: 24px;
+}
