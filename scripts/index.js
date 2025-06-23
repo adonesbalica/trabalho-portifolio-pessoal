@@ -15,3 +15,26 @@ function activeLink() {
 }
 
 activeLink();
+
+function checkIfTheApplicationIsDeployed() {
+  const baseUrlGitHubPages =
+    "https://adonesbalica.github.io/trabalho-portifolio-pessoal/";
+  const baseUrl = window.location.pathname;
+  const customUrl = "";
+
+  if (baseUrl === baseUrlGitHubPages) {
+    customUrl = baseUrlGitHubPages;
+  }
+
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach((link) => {
+    if (!link.getAttribute("href").split("/").pop() === "index.html") {
+      `${customUrl}/${link.getAttribute("href").split("/").pop()}`;
+    } else {
+      `${customUrl}/pages/${link.getAttribute("href").split("/").pop()}`;
+    }
+  });
+}
+
+checkIfTheApplicationIsDeployed();
