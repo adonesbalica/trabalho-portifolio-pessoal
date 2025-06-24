@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.about--container {
+.contact--container {
   display: flex;
   width: 1360px;
   background-color: var(--gray-600);
@@ -15,20 +15,28 @@
   gap: 136px;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.contact--container div {
+  width: 592px;
 }
 
-.about > p:first-of-type {
+.profile--image {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+
+  border: 2px solid var(--color-red);
+}
+
+.contact--container div > p:first-of-type {
   color: var(--color-red);
   font-size: 16;
   line-height: 120%;
   font-family: Inconsolata;
+  margin-top: 40px;
+  margin-bottom: 8px;
 }
 
-.about > p:last-of-type {
+.contact--container div > p:last-of-type {
   color: var(--gray-300);
   font-size: 16px;
   line-height: 140%;
@@ -36,7 +44,7 @@
   font-weight: bold;
 }
 
-.about h1 {
+.contact--container h1 {
   color: var(--gray-100);
   font-size: 24px;
   line-height: 120%;
@@ -44,22 +52,30 @@
   font-weight: bold;
 }
 
-.about a {
-  padding: 16px 24px;
-  cursor: pointer;
-  color: var(--gray-100);
+.container--tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.contact--container div a {
+  width: 48px;
+  height: 48px;
   background-color: var(--gray-400);
-  border: none;
-  font-family: Asap;
-  font-weight: bold;
-  border-radius: 8px;
-  margin-top: 32px;
-  width: 160px;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
   opacity: 0.9;
 }
 
-.about a:hover {
+.contact--container div a:hover {
   opacity: 1;
   transition: 0.2s ease-in-out;
+}
+
+.contact--container div a img {
+  width: 24px;
+  height: 24px;
 }
