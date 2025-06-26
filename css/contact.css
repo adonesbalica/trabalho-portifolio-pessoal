@@ -123,6 +123,16 @@
   transition: 0.2s ease-in-out;
 }
 
+.form--container form textarea {
+  color: var(--gray-100);
+  font-size: 16px;
+  font-family: Asap;
+}
+
+.form--container form textarea::placeholder {
+  font-size: 16px;
+}
+
 #message {
   height: 160px;
   background-color: var(--gray-500);

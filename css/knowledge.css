@@ -1,0 +1,30 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.knowledge--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1360px;
+  background-color: var(--gray-600);
+  border-radius: 8px;
+  margin-top: 128px;
+  padding: 72px;
+  gap: 16px;
+}
+
+.tag {
+  width: 400px;
+  background-color: var(--gray-400);
+  padding: 23px 20px;
+  border-radius: 6px;
+  color: var(--gray-200);
+  font-family: Maven Pro;
+  line-height: 140%;
+  font-size: 16px;
+  font-weight: medium;
+}
